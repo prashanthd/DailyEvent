@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.heeelo.Detailview" >
+
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="89dp"
+        android:src="@drawable/abc_list_selector_background_transition_holo_dark" />
+    
+    <LinearLayout  android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_marginTop="10dp"
+   		android:layout_below="@+id/micImage"
+   		android:id="@+id/linear1"
+   		android:orientation="horizontal" >
+
+	 android:visibility="gone"
+	 
+	  <TextView
+               android:id="@+id/contentbody"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="5dp"
+               android:textSize="20sp" />
+	  
+	  
+            
+	   
+	   <Button
+	      	android:id="@+id/play"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:enabled="true"
+	      	android:text="play" />
+	   
+	   <Button
+	      	android:id="@+id/stopPlay"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:enabled="true"
+	      	android:layout_marginLeft="10dp"
+	      	android:text="stop playing" />
+   
+   </LinearLayout>
+
+   
+</RelativeLayout>
